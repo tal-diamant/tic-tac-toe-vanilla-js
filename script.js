@@ -44,14 +44,6 @@ function insertXorO(element) {
 
 function isGameover() {
     let gameover = false;
-    //if board is full
-    if(boardIsFull()) {
-        //display message of draw && gameover
-        alert("Draw!, nobody wins..");
-        resetGame();
-        gameover = true;
-    }
-
     //if there are 3 same symbols in a row
     if(threeInRow()) {
         //victory message && gameover
@@ -59,6 +51,7 @@ function isGameover() {
         resetGame();
         gameover = true;
     }
+
     //if there are 3 same symbols in a column
     if(threeInCol()){
         //victory message && gameover
@@ -71,6 +64,14 @@ function isGameover() {
     if(threeInDiagonal()) {
         //victory message && gameover
         alert(`${turn} wins!`);
+        resetGame();
+        gameover = true;
+    }
+
+    //if board is full
+    if(boardIsFull()) {
+        //display message of draw && gameover
+        alert("Draw!, nobody wins..");
         resetGame();
         gameover = true;
     }
