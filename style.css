@@ -19,22 +19,21 @@ body {
 
 .two-btn-choice {
     display: flex;
+    width: 80%;
     margin-top: 3rem;
-    padding: 20px;
     justify-content: space-between;
-    width: 25%;
 }
 
 .two-btn-choice2 {
-    width: 10%;
+    width: 70%;
 }
 
 .btn {
-    padding: 15px;
+    padding: 15px 10px;
     border: none;
     background-color: #444;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .btn:hover {
@@ -57,7 +56,7 @@ body {
 .grid-item {
     background-color: gray;
     text-align: center;
-    padding: 50px 60px;
+    padding: 25px 35px;
     font-size: 30px;
 }
 
